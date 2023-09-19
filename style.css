@@ -1,0 +1,81 @@
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;1,500&display=swap');
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Cabin, sans-serif;
+}
+h1{
+  font-size: 30px;
+}
+h2{
+  font-size: 17px;
+}
+h3{
+  font-size: 15px;
+}
+p{
+  font-size: 12px;
+}
+span{
+  font-size: 10px;
+}
+.yellow_rectangle{
+  height: 2px;
+  width: 17px;
+  background:#FFCD04
+}
+main{
+  
+  max-width:595px;
+  min-height: 700px;
+  display:grid;
+  grid-template-columns: 45% 55% ;
+  grid-template-rows: 1fr 578px;
+  margin: 0 auto;
+}
+.avatar{
+  position: relative;
+}
+.avatar::before{
+ content:"";
+ position:absolute;
+ height:100%;
+ width: 48px;
+background:#FFCD04B2;
+right: 206px;
+}
+.profile{
+  /* background: rgb(150, 125, 125); */
+  padding:66px 14px 6px 32px;
+}
+.profile > h3{
+  margin-top:6px;
+  margin-bottom:29px;
+}
+.profile .yellow_rectangle{
+  margin: 11px 0;
+}
+.profile > p{
+  font-size: 10px;
+}
+.yellow_bg{
+  background:#FFCD04;
+  width: 106px;
+  padding-left: 6px;
+}
+.education{
+  background: #292935;
+}
+.work{
+  background: #22222E;
+}
+.avatar > img{
+  height:100%;
+  width:254px;
+  float: right;
+}
