@@ -115,7 +115,6 @@ right: 206px;
   width: 39px;
 }
 .expertise{
-
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: 30px 30px 30px 30px;
@@ -128,13 +127,17 @@ right: 206px;
   gap: 11px;
   bottom: 0;
 }
-
+.contacts>div{
+  display:flex;  
+  flex-direction: column;
+  height: 108px;
+}
 .contact_img{
   display:flex;
-  flex-direction: column;
+ 
   background:#FFCD04;
   width: 37px;
-  height: 108px;
+  
   align-items:center;
   justify-content: space-around;
 }
@@ -153,11 +156,6 @@ right: 206px;
 .work{
   background: #22222E;
 }
-
-
-
-
-
 
 
 
