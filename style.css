@@ -8,6 +8,7 @@
 
 body{
   font-family: Cabin, sans-serif;
+  color:white;
 }
 h1{
   font-size: 30px;
@@ -32,12 +33,14 @@ span{
 main{
   
   max-width:595px;
-  min-height: 700px;
+  /* min-height: 700px; */
   display:grid;
   grid-template-columns: 45% 55% ;
   grid-template-rows: 1fr 578px;
   margin: 0 auto;
 }
+
+/* section Avatar */
 .avatar{
   position: relative;
 }
@@ -49,9 +52,18 @@ main{
 background:#FFCD04B2;
 right: 206px;
 }
+
+.avatar > img{
+  height:100%;
+  /* width:254px; */
+  float: right;
+}
+
+/* section Profile */
 .profile{
   /* background: rgb(150, 125, 125); */
   padding:66px 14px 6px 32px;
+  color:black;
 }
 .profile > h3{
   margin-top:6px;
@@ -68,14 +80,88 @@ right: 206px;
   width: 106px;
   padding-left: 6px;
 }
+/* section Education */
 .education{
   background: #292935;
+  position:relative;
 }
+.grey_line{
+  width: 135px;
+  height: 4px;
+  background:#5E5D6B;
+}
+.yellow_line{
+  width: 115px;
+  height: 100%;
+  background:#FFCD04;
+  position: relative;
+}
+.yellow_line::after{
+  content:'';
+  position: absolute;
+  right: 0;
+  top:-1px;
+  width: 2px;
+  height: calc(100% + 2px);
+  background:#FFCD04;
+}
+.w58{
+  width: 56px;
+}
+.w41{
+  width: 41px;
+}
+.w39{
+  width: 39px;
+}
+.expertise{
+
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 30px 30px 30px 30px;
+  /* justify-items:start ; */
+  align-items: center;
+}
+.contacts{
+  display:flex;  
+  position:absolute;
+  bottom: 0;
+}
+
+.contact_img{
+  display:flex;
+  flex-direction: column;
+  background:#FFCD04;
+  width: 37px;
+  height: 108px;
+  align-items:center;
+  justify-content: space-around;
+}
+.contact
+{
+  display:flex;
+  flex-direction: column;
+}
+.contacts img{
+  width: 15px;
+  height: 15px;
+  object-fit:contain;
+}
+/* section Work */
 .work{
   background: #22222E;
 }
-.avatar > img{
-  height:100%;
-  width:254px;
-  float: right;
+
+
+
+
+
+
+
+
+@media (max-width: 550px) {
+  main {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 577px 577px;
+  }
 }
