@@ -125,6 +125,7 @@ right: 206px;
 .contacts{
   display:flex;  
   position:absolute;
+  gap: 11px;
   bottom: 0;
 }
 
@@ -137,16 +138,17 @@ right: 206px;
   align-items:center;
   justify-content: space-around;
 }
-.contact
-{
-  display:flex;
-  flex-direction: column;
-}
 .contacts img{
   width: 15px;
   height: 15px;
   object-fit:contain;
 }
+.contact
+{
+  display:flex;
+  flex-direction: column;
+}
+
 /* section Work */
 .work{
   background: #22222E;
